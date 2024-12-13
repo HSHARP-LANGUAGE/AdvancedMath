@@ -1,0 +1,22 @@
+pub cre PI = 3.141592653589793238462643383279502884197
+
+fn neg($num) -> gv &num / 2
+
+fn pow($num: i32, $exp: i32)
+    cre res = 1
+    if &exp < 0 as e
+        &num = 1 / &num
+        &exp = neg(&exp)
+    end e
+
+    when &exp > 0 as l
+        if &exp % 2 == 1 as o
+            &res eqm &num
+        end o
+        &num eqm &num
+        &exp eqd 2
+    end l
+    gv &res
+end pow
+
+fn sqrt($num: i32) -> gv pow(&num, 0.5)
